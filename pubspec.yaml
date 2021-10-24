@@ -93,3 +93,10 @@ flutter:
       - assets/squaresFour.png
       - assets/user.png
       - assets/users.png
+      - assets/profile.png
+      - assets/profile-menu-0.png
+      - assets/profile-menu-1.png
+      - assets/profile-menu-2.png
+      - assets/profile-menu-3.png
+      - assets/profile-menu-4.png
+      - assets/SignOut.png
