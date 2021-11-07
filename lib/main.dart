@@ -5,6 +5,9 @@ import 'ui/inbox.dart';
 import 'ui/news.dart';
 import 'ui/profile.dart';
 import 'ui/main_menu.dart';
+import 'ui/login.dart';
+import 'ui/register.dart';
+import 'ui/onboard.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: '/',
+      initialRoute: '/onboard',
       onGenerateRoute: _generateRoute,
     );
   }
@@ -38,6 +41,15 @@ Route _generateRoute(RouteSettings settings) {
       break;
     case '/profile':
       return MaterialPageRoute(builder: (context) => ProfilePage());
+      break;
+    case '/onboard':
+      return MaterialPageRoute(builder: (context) => OnBoardPage());
+      break;
+    case '/loginPage':
+      return MaterialPageRoute(builder: (context) => LoginPage());
+      break;
+    case '/registerPage':
+      return MaterialPageRoute(builder: (context) => RegisterPage());
       break;
     default:
       return MaterialPageRoute(builder: (context) => HomePage());

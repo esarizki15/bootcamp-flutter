@@ -91,7 +91,7 @@ Widget cardMenu() {
   );
 }
 
-Widget _body() {
+Widget _body({BuildContext context}) {
   return SafeArea(
     child: Container(
       margin: EdgeInsets.symmetric(horizontal: 15),
@@ -201,7 +201,9 @@ Widget _body() {
               borderRadius: BorderRadius.circular(10),
             ),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                return Navigator.pushReplacementNamed(context, '/loginPage');
+              },
               child: Container(
                 child: Row(
                   children: [
@@ -241,6 +243,6 @@ Widget _oldBody() {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: _body());
+    return Scaffold(body: _body(context: context));
   }
 }
